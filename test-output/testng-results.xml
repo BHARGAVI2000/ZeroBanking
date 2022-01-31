@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="5" passed="2" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-01-30T03:34:53Z" name="Suite" finished-at="2022-01-30T03:35:14Z" duration-ms="21062">
+  <suite started-at="2022-01-31T18:42:02Z" name="Suite" finished-at="2022-01-31T18:42:16Z" duration-ms="13768">
     <groups>
     </groups>
-    <test started-at="2022-01-30T03:34:53Z" name="Test" finished-at="2022-01-30T03:35:14Z" duration-ms="21062">
+    <test started-at="2022-01-31T18:42:02Z" name="Test" finished-at="2022-01-31T18:42:16Z" duration-ms="13768">
       <class name="TestCases.AddPayeeDatadriven">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:TestCases.AddPayeeDatadriven@7205765b]" started-at="2022-01-29T22:34:53Z" name="launchBrowser" finished-at="2022-01-29T22:35:02Z" duration-ms="9280" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:TestCases.AddPayeeDatadriven@7205765b]" started-at="2022-01-31T13:42:02Z" name="launchBrowser" finished-at="2022-01-31T13:42:07Z" duration-ms="5336" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="login()[pri:1, instance:TestCases.AddPayeeDatadriven@7205765b]" started-at="2022-01-29T22:35:02Z" name="login" finished-at="2022-01-29T22:35:05Z" duration-ms="3440" status="PASS">
+        <test-method signature="login()[pri:1, instance:TestCases.AddPayeeDatadriven@7205765b]" started-at="2022-01-31T13:42:07Z" name="login" finished-at="2022-01-31T13:42:09Z" duration-ms="2151" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="addPayee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:TestCases.AddPayeeDatadriven@7205765b]" started-at="2022-01-29T22:35:06Z" name="addPayee" data-provider="PayeeData" finished-at="2022-01-29T22:35:09Z" duration-ms="2450" status="PASS">
+        <test-method signature="addPayee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:TestCases.AddPayeeDatadriven@7205765b]" started-at="2022-01-31T13:42:11Z" name="addPayee" data-provider="PayeeData" finished-at="2022-01-31T13:42:12Z" duration-ms="1140" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,7 +41,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addPayee -->
-        <test-method signature="addPayee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:TestCases.AddPayeeDatadriven@7205765b]" started-at="2022-01-29T22:35:09Z" name="addPayee" data-provider="PayeeData" finished-at="2022-01-29T22:35:10Z" duration-ms="986" status="FAIL">
+        <test-method signature="addPayee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:TestCases.AddPayeeDatadriven@7205765b]" started-at="2022-01-31T13:42:12Z" name="addPayee" data-provider="PayeeData" finished-at="2022-01-31T13:42:13Z" duration-ms="937" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -108,7 +108,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addPayee -->
-        <test-method signature="addPayee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:TestCases.AddPayeeDatadriven@7205765b]" started-at="2022-01-29T22:35:10Z" name="addPayee" data-provider="PayeeData" finished-at="2022-01-29T22:35:12Z" duration-ms="1448" status="FAIL">
+        <test-method signature="addPayee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:TestCases.AddPayeeDatadriven@7205765b]" started-at="2022-01-31T13:42:13Z" name="addPayee" data-provider="PayeeData" finished-at="2022-01-31T13:42:14Z" duration-ms="909" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -175,7 +175,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addPayee -->
-        <test-method signature="addPayee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:TestCases.AddPayeeDatadriven@7205765b]" started-at="2022-01-29T22:35:12Z" name="addPayee" data-provider="PayeeData" finished-at="2022-01-29T22:35:13Z" duration-ms="962" status="FAIL">
+        <test-method signature="addPayee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:TestCases.AddPayeeDatadriven@7205765b]" started-at="2022-01-31T13:42:14Z" name="addPayee" data-provider="PayeeData" finished-at="2022-01-31T13:42:15Z" duration-ms="938" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -242,7 +242,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addPayee -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestCases.AddPayeeDatadriven@7205765b]" started-at="2022-01-29T22:35:13Z" name="closeBrowser" finished-at="2022-01-29T22:35:14Z" duration-ms="194" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestCases.AddPayeeDatadriven@7205765b]" started-at="2022-01-31T13:42:16Z" name="closeBrowser" finished-at="2022-01-31T13:42:16Z" duration-ms="144" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
