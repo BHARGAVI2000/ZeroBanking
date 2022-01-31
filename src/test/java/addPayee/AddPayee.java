@@ -40,7 +40,7 @@ public class AddPayee {
 		String Actual=driver.findElement(By.xpath("//div[@id='alert_content']")).getText();
 
 		String Expected ="The new payee HydroOne Utility was successfully created.";
-
+Thread.sleep(2000);
 		if(Actual.equals(Expected)) {
 			System.out.println("Test Pass");}
 		else
