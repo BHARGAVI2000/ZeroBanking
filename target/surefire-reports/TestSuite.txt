@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 22.881 s <<< FAILURE! - in TestSuite
+TestCases.AddPayeeDatadriven.addPayee  Time elapsed: 1.971 s  <<< FAILURE!
+java.lang.AssertionError: expected [The new payee Payee1 was successfully created.] but found [The new payee Payee2 was successfully created.]
+	at TestCases.AddPayeeDatadriven.addPayee(AddPayeeDatadriven.java:83)
+
+TestCases.AddPayeeDatadriven.addPayee  Time elapsed: 1.768 s  <<< FAILURE!
+java.lang.AssertionError: expected [The new payee Payee1 was successfully created.] but found [The new payee Payee3 was successfully created.]
+	at TestCases.AddPayeeDatadriven.addPayee(AddPayeeDatadriven.java:83)
+
+TestCases.AddPayeeDatadriven.addPayee  Time elapsed: 1.669 s  <<< FAILURE!
+java.lang.AssertionError: expected [The new payee Payee1 was successfully created.] but found [The new payee Payee4 was successfully created.]
+	at TestCases.AddPayeeDatadriven.addPayee(AddPayeeDatadriven.java:83)
+
