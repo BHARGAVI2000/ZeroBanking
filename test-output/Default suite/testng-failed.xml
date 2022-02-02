@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="TestCases.AddPayee3">
+      <class name="dataDrivenTesting.addNewPayeeITestResult2">
         <methods>
+          <include name="TestReports"/>
           <include name="closeBrowser"/>
-          <include name="launchBrowser"/>
-          <include name="addPayee" invocation-numbers="1 2 3"/>
+          <include name="payBills" invocation-numbers="0 2 3"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- TestCases.AddPayee3 -->
+      </class> <!-- dataDrivenTesting.addNewPayeeITestResult2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

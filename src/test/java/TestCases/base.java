@@ -33,7 +33,7 @@ public class base {
 	public static WebDriver driver;
 	@BeforeClass
 	public void launchBrowser() {
-		System.setProperty("webdriver.chrome.driver", "C:\\driver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\drivers\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("http://zero.webappsecurity.com/index.html");

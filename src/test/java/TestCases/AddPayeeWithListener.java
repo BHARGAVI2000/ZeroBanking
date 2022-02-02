@@ -23,14 +23,16 @@ import pageObjects.LoginPage;
 import pageObjects.SignInPage;
 
 
-@Listeners(Utility.TestNGListener.class)
+//AddPayee with valid data , listener annotations
 
+
+@Listeners(Utility.TestNGListener.class)
 public class AddPayeeWithListener extends base {
 
 	SignInPage si;
 	LoginPage lp ;
 	AddPayeePage ap;
-	
+
 
 
 	@Test(priority=1)
@@ -52,8 +54,6 @@ public class AddPayeeWithListener extends base {
 		lp.clickDetailButton();
 		lp.clickProceedLink();
 		test.log(LogStatus.INFO, "Login successful");
-
-		test.log(LogStatus.INFO, "Add Payee test completed");
 		String actualTitle = driver.getTitle();
 		String expectedTitle= "Zero - Account Summary";
 		Assert.assertEquals(actualTitle, expectedTitle);
@@ -62,7 +62,6 @@ public class AddPayeeWithListener extends base {
 
 	@Test(priority=2)
 	public void addPayee() throws InterruptedException {
-		//test=Report.startTest("Login test stared");
 		test.log(LogStatus.INFO, "click Paybills");
 		ap.clickPaybills();
 		ap.clickAddNewPayee();
@@ -73,13 +72,15 @@ public class AddPayeeWithListener extends base {
 		ap.clickAddBtn();
 		test.log(LogStatus.INFO, "clicked on pay button");
 
+		test.log(LogStatus.INFO, "Add Payee test completed");
+
 		String ActualText= driver.findElement(By.id("alert_content")).getText();
-		String ExpectedText="The new payee saritha was successfully created1.";
+		String ExpectedText="The new payee saritha was successfully created.";
 		Assert.assertEquals(ActualText,ExpectedText);
 
 	}
 
-		}
+}
 
 
 

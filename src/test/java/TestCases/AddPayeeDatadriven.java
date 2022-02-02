@@ -29,12 +29,10 @@ import pageObjects.AddPayeePage;
 import pageObjects.LoginPage;
 import pageObjects.SignInPage;
 
-
-@Listeners(Utility.TestNGListener.class)
-
-//data driven testing including listener class with xml execution
+//data driven testing including listener class with xml execution 
 
 public class AddPayeeDatadriven extends base {
+
 	SignInPage si;
 	LoginPage lp ;
 	AddPayeePage ap;
@@ -54,11 +52,12 @@ public class AddPayeeDatadriven extends base {
 
 
 		lp.doLogin("username", "password");
+
+		test.log(LogStatus.INFO, "Entered username, password, clicked submit");
 		lp.clickDetailButton();
 		lp.clickProceedLink();
 		test.log(LogStatus.INFO, "Login successful");
 
-		test.log(LogStatus.INFO, "Add Payee test completed");
 		String actualTitle = driver.getTitle();
 		String expectedTitle= "Zero - Account Summary";
 		Assert.assertEquals(actualTitle, expectedTitle);
@@ -67,7 +66,6 @@ public class AddPayeeDatadriven extends base {
 
 	@Test(dataProvider ="PayeeData",priority=2)
 	public void addPayee(String uname, String address , String account, String paydetails) throws InterruptedException {
-		//test=Report.startTest("Login test stared");
 		test.log(LogStatus.INFO, "click Paybills");
 		ap.clickPaybills();
 		ap.clickAddNewPayee();
@@ -75,6 +73,7 @@ public class AddPayeeDatadriven extends base {
 		ap.enterPayeeAddress(address);
 		ap.enterPayeeAccount(account);
 		ap.enterPayeeDetails(paydetails);
+		test.log(LogStatus.INFO, "Entered the payee details");
 		ap.clickAddBtn();
 		test.log(LogStatus.INFO, "clicked on pay button");
 
@@ -87,9 +86,8 @@ public class AddPayeeDatadriven extends base {
 	@DataProvider(name="PayeeData")
 	public String[][] testData() throws IOException {
 		String path= System.getProperty("user.dir");
-    	File src= new File(path+"\\src\\test\\resources\\excelData\\NewPayeeDetailsData.xlsx");
-		//File src= new File("C:\\Users\\Aila\\eclipse-workspace\\ZeroBankingAddPayee\\src\\test\\resources\\excelData\\NewPayeeDetailsData.xlsx");
-    	FileInputStream fis= new FileInputStream(src);
+		File src= new File(path+"\\src\\test\\resources\\excelData\\NewPayeeDetailsData.xlsx");
+		FileInputStream fis= new FileInputStream(src);
 		XSSFWorkbook workbook= new XSSFWorkbook(fis);
 		XSSFSheet sheet = workbook.getSheet("Sheet1");
 		int rowCount=sheet.getLastRowNum();
