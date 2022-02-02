@@ -55,7 +55,7 @@ public class AddPayeeWithListener extends base {
 		lp.clickProceedLink();
 		test.log(LogStatus.INFO, "Login successful");
 		String actualTitle = driver.getTitle();
-		String expectedTitle= "Zero - Account Summary";
+		String expectedTitle= "Zero - Account Summary1";
 		Assert.assertEquals(actualTitle, expectedTitle);
 	}
 
