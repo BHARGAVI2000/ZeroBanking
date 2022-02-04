@@ -30,7 +30,7 @@ import pageObjects.LoginPage;
 import pageObjects.SignInPage;
 
 //data driven testing including listener class with xml execution 
-
+//data
 public class AddPayeeDatadriven extends base {
 
 	SignInPage si;
@@ -61,6 +61,7 @@ public class AddPayeeDatadriven extends base {
 		String actualTitle = driver.getTitle();
 		String expectedTitle= "Zero - Account Summary";
 		Assert.assertEquals(actualTitle, expectedTitle);
+		
 	}
 
 
@@ -76,6 +77,7 @@ public class AddPayeeDatadriven extends base {
 		test.log(LogStatus.INFO, "Entered the payee details");
 		ap.clickAddBtn();
 		test.log(LogStatus.INFO, "clicked on pay button");
+		Thread.sleep(1000);
 
 		String ActualText= driver.findElement(By.id("alert_content")).getText();
 		String ExpectedText="The new payee Payee1 was successfully created.";
